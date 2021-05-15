@@ -1,9 +1,11 @@
 import discord
+import os
+
+
 from discord.ext import commands
 
 bot = commands.Bot(command_prefix='%')
 
-token = 'Nzc5NjEyMTg1OTA2NjQyOTc0.X7jEbQ.C9b-n_rECETmMAszmTv4ypbz454'
 game = discord.Game("테스트 봇")
 
 @bot.event
@@ -16,5 +18,5 @@ async def 안녕(ctx):
     await ctx.send("안녕")
 
 
-
-bot.run(token)
+access_token = os.environ["BOT_TOKEN"]
+bot.run(access_token)
