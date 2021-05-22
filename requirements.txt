@@ -1,7 +1,5 @@
-import discord
-from discord.ext import commands
-import pickle
-import asyncio
-import random
-from keyboardgame import kg
-import os
+discord
+pickle
+asyncio
+random
+os
