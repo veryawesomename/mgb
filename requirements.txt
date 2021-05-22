@@ -1,5 +1,4 @@
 discord
-pickle
 asyncio
 random
 os
