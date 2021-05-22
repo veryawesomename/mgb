@@ -117,9 +117,12 @@ async def 도움(ctx):
     embed.add_field(name="설정", value="$등록", inline=False)
     embed.add_field(name="정보", value="$정보", inline=False)
     embed.add_field(name="게임", value="$두더지잡기\n$키보드워리어(제작중)", inline=False)
+    embed.add_field(name="기타", value="$초대링크", inline=False)
     await ctx.send(embed=embed)
 
-
+@bot.command()
+async def 초대링크(ctx):
+    await ctx.send(ctx.message.author.mention + "https://discord.com/api/oauth2/authorize?client_id=503876158501289985&permissions=1275068438&scope=bot")
 
 # @bot.command()
 # async def 초기화(ctx):
