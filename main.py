@@ -1,6 +1,6 @@
 import discord
 from discord.ext import commands
-from discord.ext.commands.cooldowns import BucketType
+#from discord.ext.commands.cooldowns import BucketType
 import pickle
 import asyncio
 import random
